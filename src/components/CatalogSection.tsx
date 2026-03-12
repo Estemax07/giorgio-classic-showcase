@@ -1,27 +1,21 @@
 import { motion } from "framer-motion";
 import ProductCard from "./ProductCard";
-import shoeOxford from "@/assets/shoe-oxford.jpg";
-import shoeLoafer from "@/assets/shoe-loafer.jpg";
-import shoeMonk from "@/assets/shoe-monk.jpg";
-import shoeDerby from "@/assets/shoe-derby.jpg";
-import shoeChelsea from "@/assets/shoe-chelsea.jpg";
-import shoeBrogue from "@/assets/shoe-brogue.jpg";
-import shoeMoccasin from "@/assets/shoe-moccasin.jpg";
-import shoePenny from "@/assets/shoe-penny.jpg";
-import shoeFormal from "@/assets/shoe-formal.jpg";
-import shoeChukka from "@/assets/shoe-chukka.jpg";
+import valiente from "@/assets/valiente.jpeg";
+import stilletos from "@/assets/stilletos1.png";
+import atlas from "@/assets/atlas.jpeg";
+import verona from "@/assets/verona.jpeg";
+import aureo from "@/assets/aureo.jpeg";
+import aurora from "@/assets/aurora.jpeg";
+import terra from "@/assets/terra.jpeg";
 
 const products = [
-  { name: "Oxford Clásico", price: "$189.000", image: shoeOxford, category: "Formal" },
-  { name: "Loafer Nero", price: "$165.000", image: shoeLoafer, category: "Casual Elegante" },
-  { name: "Monk Strap Doble", price: "$210.000", image: shoeMonk, category: "Formal" },
-  { name: "Derby Cognac", price: "$175.000", image: shoeDerby, category: "Semi-formal" },
-  { name: "Chelsea Boot", price: "$230.000", image: shoeChelsea, category: "Botas" },
-  { name: "Brogue Wingtip", price: "$195.000", image: shoeBrogue, category: "Formal" },
-  { name: "Mocasín Gamuza", price: "$145.000", image: shoeMoccasin, category: "Casual" },
-  { name: "Penny Loafer", price: "$160.000", image: shoePenny, category: "Casual Elegante" },
-  { name: "Formal Patent", price: "$250.000", image: shoeFormal, category: "Gala" },
-  { name: "Chukka Boot", price: "$215.000", image: shoeChukka, category: "Botas" },
+  { name: "Valiente", price: "$159.000", image: valiente, category: "Tacones" },
+  { name: "Stilletos", price: "$139.000", image: stilletos, category: "Tacones" },
+  { name: "Atlas", price: "$130.000", image: atlas, category: "Formal" },
+  { name: "Verona", price: "$169.000", image: verona, category: "Tacones" },
+  { name: "Aureo", price: "$140.000", image: aureo, category: "Formal" },
+  { name: "Aurora", price: "$149.000", image: aurora, category: "Tacones" },
+  { name: "Terra", price: "$90.000", image: terra, category: "Sneakers" },
 ];
 
 const CatalogSection = () => {
