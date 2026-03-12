@@ -1,29 +1,16 @@
 import { motion } from "framer-motion";
-import shoeMonk from "@/assets/shoe-monk.jpg";
-import shoeDerby from "@/assets/shoe-derby.jpg";
-import shoeChelsea from "@/assets/shoe-chelsea.jpg";
-import shoeFormal from "@/assets/shoe-formal.jpg";
-import marbleBg from "@/assets/marble-bg.png";
+import aureo from "@/assets/Aureo.jpeg";
+import aurora from "@/assets/Aurora.jpeg";
 
-const images = [
-  { src: shoeMonk, alt: "Monk Strap" },
-  { src: shoeDerby, alt: "Derby Cognac" },
-  { src: shoeChelsea, alt: "Chelsea Boot" },
-  { src: shoeFormal, alt: "Formal Patent" },
+const galleryImages = [
+  { image: aureo, alt: "Aureo" },
+  { image: aurora, alt: "Aurora" },
 ];
 
 const VisualGallery = () => {
   return (
-    <section
-      className="section-padding relative overflow-hidden"
-      style={{
-        backgroundImage: `url(${marbleBg})`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
-      <div className="absolute inset-0 bg-background/80" />
-      <div className="relative z-10">
+    <section className="section-padding bg-secondary/20">
+      <div className="container-custom">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -35,25 +22,22 @@ const VisualGallery = () => {
           <h2 className="section-title">Nuestra Artesanía</h2>
           <div className="gold-underline" />
         </motion.div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 max-w-6xl mx-auto">
-          {images.map((img, i) => (
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+          {galleryImages.map((item, index) => (
             <motion.div
-              key={img.alt}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
+              key={item.alt}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.1 }}
-              className="group relative overflow-hidden shadow-lg aspect-[3/4]"
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              className="overflow-hidden bg-card shadow-luxury"
             >
               <img
-                src={img.src}
-                alt={img.alt}
-                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                loading="lazy"
+                src={item.image}
+                alt={item.alt}
+                className="w-full h-[420px] object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end p-5">
-                <span className="font-display text-xl text-primary-foreground">{img.alt}</span>
-              </div>
             </motion.div>
           ))}
         </div>
