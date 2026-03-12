@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import ProductCard from "./ProductCard";
 import shoeOxford from "@/assets/shoe-oxford.jpg";
 import shoeLoafer from "@/assets/shoe-loafer.jpg";
@@ -26,15 +27,17 @@ const products = [
 const CatalogSection = () => {
   return (
     <section id="catálogo" className="section-padding">
-      <div className="text-center mb-16">
-        <p className="text-xs tracking-[0.3em] uppercase text-accent mb-3 font-body">
-          Nuestra Colección
-        </p>
-        <h2 className="font-display text-4xl md:text-5xl font-bold text-foreground">
-          Catálogo
-        </h2>
-        <div className="w-16 h-0.5 bg-accent mx-auto mt-6" />
-      </div>
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="text-center mb-16"
+      >
+        <p className="section-label">Nuestra Colección</p>
+        <h2 className="section-title">Catálogo</h2>
+        <div className="gold-underline" />
+      </motion.div>
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
         {products.map((product) => (
           <ProductCard key={product.name} {...product} />
