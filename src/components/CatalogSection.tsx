@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
 import ProductCard from "./ProductCard";
-import valiente from "@/assets/valiente.jpeg";
-import stilletos from "@/assets/stilletos1.png";
-import atlas from "@/assets/atlas.jpeg";
-import verona from "@/assets/verona.jpeg";
-import aureo from "@/assets/aureo.jpeg";
-import aurora from "@/assets/aurora.jpeg";
-import terra from "@/assets/terra.jpeg";
+import valiente from "@/assets/Valiente.jpeg";
+import stilletos from "@/assets/Stilletos1.png";
+import atlas from "@/assets/Atlas.jpeg";
+import verona from "@/assets/Verona.jpeg";
+import aureo from "@/assets/Aureo.jpeg";
+import aurora from "@/assets/Aurora.jpeg";
+import terra from "@/assets/Terra.jpeg";
 
 const products = [
   { name: "Valiente", price: "$159.000", image: valiente, category: "Tacones" },
@@ -32,6 +32,7 @@ const CatalogSection = () => {
         <h2 className="section-title">Catálogo</h2>
         <div className="gold-underline" />
       </motion.div>
+
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
         {products.map((product) => (
           <ProductCard key={product.name} {...product} />
