@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        display: ["Playfair Display", "Georgia", "serif"],
-        body: ["Lato", "Helvetica Neue", "sans-serif"],
+        display: ["Cormorant Garamond", "Georgia", "serif"],
+        body: ["Raleway", "Helvetica Neue", "sans-serif"],
       },
       colors: {
         border: "hsl(var(--border))",
@@ -55,6 +55,8 @@ export default {
         cream: "hsl(var(--cream))",
         leather: "hsl(var(--leather))",
         "dark-leather": "hsl(var(--dark-leather))",
+        navy: "hsl(var(--navy))",
+        marble: "hsl(var(--marble))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
