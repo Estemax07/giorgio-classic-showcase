@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import ProductCard from "./ProductCard";
+
 import valiente from "@/assets/Valiente.jpeg";
 import stilletos from "@/assets/Stilletos1.png";
 import atlas from "@/assets/Atlas.jpeg";
@@ -9,13 +10,55 @@ import aurora from "@/assets/Aurora.jpeg";
 import terra from "@/assets/Terra.jpeg";
 
 const products = [
-  { name: "Valiente", price: "$159.000", image: valiente, category: "Tacones" },
-  { name: "Stilletos", price: "$139.000", image: stilletos, category: "Tacones" },
-  { name: "Atlas", price: "$130.000", image: atlas, category: "Formal" },
-  { name: "Verona", price: "$169.000", image: verona, category: "Tacones" },
-  { name: "Aureo", price: "$140.000", image: aureo, category: "Formal" },
-  { name: "Aurora", price: "$149.000", image: aurora, category: "Tacones" },
-  { name: "Terra", price: "$90.000", image: terra, category: "Sneakers" },
+  {
+    name: "Atlas",
+    price: "$130.000",
+    image: atlas,
+    category: "Formal",
+    link: "https://giorgioclasic.com/products/atlas"
+  },
+  {
+    name: "Aureo",
+    price: "$140.000",
+    image: aureo,
+    category: "Formal",
+    link: "https://giorgioclasic.com/products/aureo"
+  },
+  {
+    name: "Aurora",
+    price: "$149.000",
+    image: aurora,
+    category: "Tacones",
+    link: "https://giorgioclasic.com/products/aurora"
+  },
+  {
+    name: "Stilletos",
+    price: "$139.000",
+    image: stilletos,
+    category: "Tacones",
+    link: "https://giorgioclasic.com/products/stilletos"
+  },
+  {
+    name: "Terra",
+    price: "$90.000",
+    image: terra,
+    category: "Sneakers",
+    link: "https://giorgioclasic.com/products/terra"
+  },
+  {
+    name: "Valiente",
+    price: "$159.000",
+    image: valiente,
+    category: "Tacones",
+    link: "https://giorgioclasic.com/products/valiente"
+  },
+  {
+    name: "Verona",
+    price: "$169.000",
+    image: verona,
+    category: "Tacones",
+    link: "https://giorgioclasic.com/products/verona"
+  }
 ];
 
 const CatalogSection = () => {
