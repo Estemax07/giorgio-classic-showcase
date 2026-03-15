@@ -4,6 +4,11 @@
       "source": "/products/:path*",
       "destination": "https://giorgio-manufacturas.myshopify.com/products/:path*",
       "permanent": true
+    },
+    {
+      "source": "/cart/:path*",
+      "destination": "https://giorgio-manufacturas.myshopify.com/cart/:path*",
+      "permanent": true
     }
   ]
 }
