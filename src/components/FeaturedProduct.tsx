@@ -54,7 +54,10 @@ const FeaturedProduct = () => {
                 $130.000
               </p>
 
-              <a href="/?product=atlas" className="btn-luxury">
+              <a
+                href="https://shop.giorgioclasic.com/products/atlas"
+                className="btn-luxury"
+              >
                 Ver producto
               </a>
             </div>
