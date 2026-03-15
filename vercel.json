@@ -1,14 +1,1 @@
-{
-  "redirects": [
-    {
-      "source": "/products/:path*",
-      "destination": "https://shop.giorgioclasic.com/products/:path*",
-      "permanent": true
-    },
-    {
-      "source": "/cart/:path*",
-      "destination": "https://shop.giorgioclasic.com/cart/:path*",
-      "permanent": true
-    }
-  ]
-}
+{}
