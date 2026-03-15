@@ -5,38 +5,50 @@ interface ProductCardProps {
   price: string;
   image: string;
   category: string;
+  link: string;
 }
 
-const ProductCard = ({ name, price, image, category }: ProductCardProps) => {
+const ProductCard = ({ name, price, image, category, link }: ProductCardProps) => {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-50px" }}
-      transition={{ duration: 0.6 }}
-      className="group cursor-pointer"
+      whileHover={{ y: -8 }}
+      transition={{ duration: 0.3 }}
+      className="bg-card shadow-luxury overflow-hidden group"
     >
-      <div className="relative overflow-hidden bg-marble mb-4 aspect-[3/4] shadow-md group-hover:shadow-xl transition-shadow duration-500">
+      <div className="overflow-hidden">
         <img
           src={image}
           alt={name}
-          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-          loading="lazy"
+          className="w-full h-[320px] object-cover transition-transform duration-700 group-hover:scale-105"
         />
-        <div className="absolute inset-0 bg-primary/0 group-hover:bg-primary/10 transition-colors duration-500" />
-        <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-primary/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500">
-          <span className="text-xs tracking-[0.2em] uppercase text-primary-foreground font-body">Ver detalles</span>
-        </div>
       </div>
-      <p className="text-[10px] tracking-[0.25em] uppercase text-accent mb-1 font-body font-semibold">
-        {category}
-      </p>
-      <h3 className="font-display text-lg font-medium text-foreground mb-1">
-        {name}
-      </h3>
-      <p className="text-foreground/70 font-semibold font-body text-sm">{price}</p>
+
+      <div className="p-5 text-center">
+        <p className="text-xs uppercase tracking-[0.25em] text-muted-foreground mb-2">
+          {category}
+        </p>
+
+        <h3 className="text-xl font-display text-foreground mb-2">
+          {name}
+        </h3>
+
+        <p className="text-lg text-accent font-medium mb-4">
+          {price}
+        </p>
+
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block px-6 py-2 bg-accent text-accent-foreground text-sm tracking-widest uppercase hover:opacity-90 transition"
+        >
+          VER
+        </a>
+      </div>
     </motion.div>
   );
 };
+
+export default ProductCard;
 
 export default ProductCard;
