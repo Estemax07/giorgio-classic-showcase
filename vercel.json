@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/products/:path*",
+      "destination": "https://giorgio-manufacturas.myshopify.com/products/:path*",
+      "permanent": true
+    }
+  ]
+}
