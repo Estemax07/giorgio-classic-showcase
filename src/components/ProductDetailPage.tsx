@@ -53,7 +53,7 @@ const ProductDetailPage = ({ product }: ProductDetailPageProps) => {
                 href={product.buyLink}
                 className="btn-luxury"
               >
-                Comprar
+                Comprar en tienda
               </a>
 
               <a
