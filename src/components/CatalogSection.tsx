@@ -8,49 +8,49 @@ const productList = [
     price: products.atlas.price,
     image: products.atlas.image,
     category: products.atlas.category,
-    link: "/?product=atlas",
+    link: "https://shop.giorgioclasic.com/products/atlas",
   },
   {
     name: products.aureo.name,
     price: products.aureo.price,
     image: products.aureo.image,
     category: products.aureo.category,
-    link: "/?product=aureo",
+    link: "https://shop.giorgioclasic.com/products/aureo",
   },
   {
     name: products.aurora.name,
     price: products.aurora.price,
     image: products.aurora.image,
     category: products.aurora.category,
-    link: "/?product=aurora",
+    link: "https://shop.giorgioclasic.com/products/aurora",
   },
   {
     name: products.stilletos.name,
     price: products.stilletos.price,
     image: products.stilletos.image,
     category: products.stilletos.category,
-    link: "/?product=stilletos",
+    link: "https://shop.giorgioclasic.com/products/stilletos",
   },
   {
     name: products.terra.name,
     price: products.terra.price,
     image: products.terra.image,
     category: products.terra.category,
-    link: "/?product=terra",
+    link: "https://shop.giorgioclasic.com/products/terra",
   },
   {
     name: products.valiente.name,
     price: products.valiente.price,
     image: products.valiente.image,
     category: products.valiente.category,
-    link: "/?product=valiente",
+    link: "https://shop.giorgioclasic.com/products/valiente",
   },
   {
     name: products.verona.name,
     price: products.verona.price,
     image: products.verona.image,
     category: products.verona.category,
-    link: "/?product=verona",
+    link: "https://shop.giorgioclasic.com/products/verona",
   },
 ];
 
@@ -77,5 +77,7 @@ const CatalogSection = () => {
     </section>
   );
 };
+
+export default CatalogSection;
 
 export default CatalogSection;
