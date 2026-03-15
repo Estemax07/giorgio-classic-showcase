@@ -1,64 +1,57 @@
 import { motion } from "framer-motion";
 import ProductCard from "./ProductCard";
+import { products } from "@/data/products";
 
-import valiente from "@/assets/Valiente.jpeg";
-import stilletos from "@/assets/Stilletos1.png";
-import atlas from "@/assets/Atlas.jpeg";
-import verona from "@/assets/Verona.jpeg";
-import aureo from "@/assets/Aureo.jpeg";
-import aurora from "@/assets/Aurora.jpeg";
-import terra from "@/assets/Terra.jpeg";
-
-const products = [
+const productList = [
   {
-    name: "Atlas",
-    price: "$130.000",
-    image: atlas,
-    category: "Formal",
-    link: "https://giorgioclasic.com/products/atlas"
+    name: products.atlas.name,
+    price: products.atlas.price,
+    image: products.atlas.image,
+    category: products.atlas.category,
+    link: "/?product=atlas",
   },
   {
-    name: "Aureo",
-    price: "$140.000",
-    image: aureo,
-    category: "Formal",
-    link: "https://giorgioclasic.com/products/aureo"
+    name: products.aureo.name,
+    price: products.aureo.price,
+    image: products.aureo.image,
+    category: products.aureo.category,
+    link: "/?product=aureo",
   },
   {
-    name: "Aurora",
-    price: "$149.000",
-    image: aurora,
-    category: "Tacones",
-    link: "https://giorgioclasic.com/products/aurora"
+    name: products.aurora.name,
+    price: products.aurora.price,
+    image: products.aurora.image,
+    category: products.aurora.category,
+    link: "/?product=aurora",
   },
   {
-    name: "Stilletos",
-    price: "$139.000",
-    image: stilletos,
-    category: "Tacones",
-    link: "https://giorgioclasic.com/products/stilletos"
+    name: products.stilletos.name,
+    price: products.stilletos.price,
+    image: products.stilletos.image,
+    category: products.stilletos.category,
+    link: "/?product=stilletos",
   },
   {
-    name: "Terra",
-    price: "$90.000",
-    image: terra,
-    category: "Sneakers",
-    link: "https://giorgioclasic.com/products/terra"
+    name: products.terra.name,
+    price: products.terra.price,
+    image: products.terra.image,
+    category: products.terra.category,
+    link: "/?product=terra",
   },
   {
-    name: "Valiente",
-    price: "$159.000",
-    image: valiente,
-    category: "Tacones",
-    link: "https://giorgioclasic.com/products/valiente"
+    name: products.valiente.name,
+    price: products.valiente.price,
+    image: products.valiente.image,
+    category: products.valiente.category,
+    link: "/?product=valiente",
   },
   {
-    name: "Verona",
-    price: "$169.000",
-    image: verona,
-    category: "Tacones",
-    link: "https://giorgioclasic.com/products/verona"
-  }
+    name: products.verona.name,
+    price: products.verona.price,
+    image: products.verona.image,
+    category: products.verona.category,
+    link: "/?product=verona",
+  },
 ];
 
 const CatalogSection = () => {
@@ -77,7 +70,7 @@ const CatalogSection = () => {
       </motion.div>
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
-        {products.map((product) => (
+        {productList.map((product) => (
           <ProductCard key={product.name} {...product} />
         ))}
       </div>
