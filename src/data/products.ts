@@ -13,8 +13,7 @@ export const products = {
     category: "Formal",
     price: "$130.000",
     image: atlasImg,
-    buyLink: "https://giorgio-manufacturas.myshopify.com/cart/43741050241121:1",
-    shopifyLink: "https://giorgio-manufacturas.myshopify.com/products/atlas",
+    buyLink: "https://giorgioclasic.com/products/atlas",
     description: [
       "Fuerza y distinción en cada detalle. Atlas es un zapato formal elaborado en cuero 100% natural, combinando acabado pulido y textura granulada para un contraste elegante y moderno.",
       "Su diseño de líneas definidas y punta estructurada proyecta presencia, mientras el ajuste con cordones brinda soporte y comodidad durante toda la jornada.",
@@ -28,8 +27,7 @@ export const products = {
     category: "Formal",
     price: "$140.000",
     image: aureoImg,
-    buyLink: "https://giorgio-manufacturas.myshopify.com/cart/43741066854497:1",
-    shopifyLink: "https://giorgio-manufacturas.myshopify.com/products/aureo",
+    buyLink: "https://giorgioclasic.com/products/aureo",
     description: [
       "Distinción clásica con carácter contemporáneo. Aureo está elaborado en cuero 100% natural con acabado pulido y detalles texturizados que realzan su diseño elegante.",
       "Su silueta estilizada y líneas refinadas proyectan presencia, mientras el ajuste de cordones garantiza comodidad y firmeza en cada paso.",
@@ -43,8 +41,7 @@ export const products = {
     category: "Tacones",
     price: "$149.000",
     image: auroraImg,
-    buyLink: "https://giorgio-manufacturas.myshopify.com/cart/43741093822561:1",
-    shopifyLink: "https://giorgio-manufacturas.myshopify.com/products/aurora",
+    buyLink: "https://giorgioclasic.com/products/aurora",
     description: [
       "Clásica, firme y sofisticada. Aurora es un tacón elaborado en cuero 100% natural con textura suave y acabado refinado que eleva cualquier look.",
       "Su diseño cerrado de líneas limpias estiliza el pie, mientras el tacón ancho aporta altura con estabilidad y comodidad durante todo el día.",
@@ -58,8 +55,7 @@ export const products = {
     category: "Tacones",
     price: "$139.000",
     image: stilletosImg,
-    buyLink: "https://giorgio-manufacturas.myshopify.com/cart/43741039624289:1",
-    shopifyLink: "https://giorgio-manufacturas.myshopify.com/products/stilletos",
+    buyLink: "https://giorgioclasic.com/products/stilletos",
     description: [
       "Sofisticación que se nota en cada paso. Nuestros Stilletos están elaborados en cuero 100% natural con textura fina y acabado impecable que realza su estilo refinado.",
       "Su diseño de punta estilizada alarga la silueta del pie, mientras el tacón aporta altura con estabilidad y confort.",
@@ -73,8 +69,7 @@ export const products = {
     category: "Sneakers",
     price: "$90.000",
     image: terraImg,
-    buyLink: "https://giorgio-manufacturas.myshopify.com/cart/43741191897185:1",
-    shopifyLink: "https://giorgio-manufacturas.myshopify.com/products/terra",
+    buyLink: "https://giorgioclasic.com/products/terra",
     description: [
       "Comodidad urbana con carácter resistente. Terra es un tenis casual elaborado en cuero 100% natural con acabado suave tipo gamuza que aporta un estilo moderno y versátil.",
       "Su diseño de líneas limpias se adapta a cualquier outfit, mientras la suela robusta de alto agarre brinda estabilidad y seguridad en cada paso.",
@@ -88,8 +83,7 @@ export const products = {
     category: "Tacones",
     price: "$159.000",
     image: valienteImg,
-    buyLink: "https://giorgio-manufacturas.myshopify.com/cart/43741030350945:1",
-    shopifyLink: "https://giorgio-manufacturas.myshopify.com/products/valiente",
+    buyLink: "https://giorgioclasic.com/products/valiente",
     description: [
       "Elegancia firme para mujeres que pisan con seguridad. Valiente es un tacón clásico confeccionado en cuero 100% natural, con acabado suave y sofisticado que realza cualquier look.",
       "Su silueta estilizada y punta fina aportan distinción, mientras el tacón ancho brinda estabilidad y comodidad durante todo el día.",
@@ -103,8 +97,7 @@ export const products = {
     category: "Tacones",
     price: "$169.000",
     image: veronaImg,
-    buyLink: "https://giorgio-manufacturas.myshopify.com/cart/43741056139361:1",
-    shopifyLink: "https://giorgio-manufacturas.myshopify.com/products/verona",
+    buyLink: "https://giorgioclasic.com/products/verona",
     description: [
       "Delicadeza y estilo que iluminan cada paso. Verona es un tacón femenino confeccionado en cuero 100% natural con acabado suave y tono neutro sofisticado que combina con todo.",
       "Su punta estilizada aporta un toque refinado, mientras la pulsera al tobillo brinda ajuste seguro y una silueta elegante.",
