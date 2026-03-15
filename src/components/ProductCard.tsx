@@ -38,8 +38,6 @@ const ProductCard = ({ name, price, image, category, link }: ProductCardProps) =
 
         <a
           href={link}
-          target="_blank"
-          rel="noopener noreferrer"
           className="inline-block px-6 py-2 bg-accent text-accent-foreground text-sm tracking-widest uppercase hover:opacity-90 transition"
         >
           VER
