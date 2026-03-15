@@ -7,7 +7,6 @@ interface ProductDetailPageProps {
     price: string;
     image: string;
     buyLink: string;
-    shopifyLink: string;
     description: string[];
   };
 }
@@ -55,13 +54,6 @@ const ProductDetailPage = ({ product }: ProductDetailPageProps) => {
                 className="btn-luxury"
               >
                 Comprar
-              </a>
-
-              <a
-                href={product.shopifyLink}
-                className="inline-block px-6 py-3 border border-border text-sm tracking-[0.25em] uppercase hover:bg-foreground hover:text-background transition"
-              >
-                Ver en Shopify
               </a>
 
               <a
