@@ -54,9 +54,9 @@ const FeaturedProduct = () => {
                 $130.000
               </p>
 
-              <button className="btn-luxury">
+              <a href="/?product=atlas" className="btn-luxury">
                 Ver producto
-              </button>
+              </a>
             </div>
           </motion.div>
         </div>
