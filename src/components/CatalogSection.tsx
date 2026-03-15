@@ -79,5 +79,3 @@ const CatalogSection = () => {
 };
 
 export default CatalogSection;
-
-export default CatalogSection;
