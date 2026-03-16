@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 interface ProductCardProps {
   name: string;
@@ -28,23 +29,21 @@ const ProductCard = ({ name, price, image, category, link }: ProductCardProps) =
           {category}
         </p>
 
-        <h3 className="text-xl font-display text-foreground mb-2">
-          {name}
-        </h3>
+        <h3 className="text-xl font-display text-foreground mb-2">{name}</h3>
 
-        <p className="text-lg text-accent font-medium mb-4">
-          {price}
-        </p>
+        <p className="text-lg text-accent font-medium mb-4">{price}</p>
 
-        <a
-          href={link}
+        <Link
+          to={link}
           className="inline-block px-6 py-2 bg-accent text-accent-foreground text-sm tracking-widest uppercase hover:opacity-90 transition"
         >
           VER
-        </a>
+        </Link>
       </div>
     </motion.div>
   );
 };
+
+export default ProductCard;
 
 export default ProductCard;
