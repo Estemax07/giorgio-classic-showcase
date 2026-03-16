@@ -46,4 +46,3 @@ const ProductCard = ({ name, price, image, category, link }: ProductCardProps) =
 
 export default ProductCard;
 
-export default ProductCard;
