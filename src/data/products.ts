@@ -11,7 +11,7 @@ export const products = {
     slug: "atlas",
     name: "Atlas",
     category: "Formal",
-    price: "$130.000",
+    price: "$150.000",
     image: atlasImg,
     buyLink: "https://shop.giorgioclasic.com/products/atlas",
     description: [
@@ -25,7 +25,7 @@ export const products = {
     slug: "aureo",
     name: "Aureo",
     category: "Formal",
-    price: "$140.000",
+    price: "$160.000",
     image: aureoImg,
     buyLink: "https://shop.giorgioclasic.com/products/aureo",
     description: [
@@ -39,7 +39,7 @@ export const products = {
     slug: "aurora",
     name: "Aurora",
     category: "Tacones",
-    price: "$149.000",
+    price: "$159.000",
     image: auroraImg,
     buyLink: "https://shop.giorgioclasic.com/products/aurora",
     description: [
@@ -53,7 +53,7 @@ export const products = {
     slug: "stilletos",
     name: "Stilletos",
     category: "Tacones",
-    price: "$139.000",
+    price: "$159.000",
     image: stilletosImg,
     buyLink: "https://shop.giorgioclasic.com/products/stilletos",
     description: [
@@ -67,7 +67,7 @@ export const products = {
     slug: "terra",
     name: "Terra",
     category: "Sneakers",
-    price: "$90.000",
+    price: "$110.000",
     image: terraImg,
     buyLink: "https://shop.giorgioclasic.com/products/terra",
     description: [
@@ -81,7 +81,7 @@ export const products = {
     slug: "valiente",
     name: "Valiente",
     category: "Tacones",
-    price: "$159.000",
+    price: "$179.000",
     image: valienteImg,
     buyLink: "https://shop.giorgioclasic.com/products/valiente",
     description: [
@@ -95,7 +95,7 @@ export const products = {
     slug: "verona",
     name: "Verona",
     category: "Tacones",
-    price: "$169.000",
+    price: "$189.000",
     image: veronaImg,
     buyLink: "https://shop.giorgioclasic.com/products/verona",
     description: [
