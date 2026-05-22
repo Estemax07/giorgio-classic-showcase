@@ -39,7 +39,7 @@ export const products = {
     slug: "aurora",
     name: "Aurora",
     category: "Tacones",
-    price: "$159.000",
+    price: "$169.000",
     image: auroraImg,
     buyLink: "https://shop.giorgioclasic.com/products/aurora",
     description: [
