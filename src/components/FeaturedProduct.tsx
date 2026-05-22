@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import atlas from "@/assets/Atlas.jpeg";
+import oxford from "@/assets/oxford.jpeg";
 
 const FeaturedProduct = () => {
   return (
@@ -18,8 +18,8 @@ const FeaturedProduct = () => {
                 Destacado
               </div>
               <img
-                src={atlas}
-                alt="Atlas"
+                src={oxford}
+                alt="Oxford Executive Black"
                 className="w-full h-auto object-cover"
               />
             </div>
@@ -32,30 +32,30 @@ const FeaturedProduct = () => {
             transition={{ duration: 0.7, delay: 0.2 }}
           >
             <p className="section-label">Producto Estrella</p>
-            <h2 className="section-title mb-6">Atlas</h2>
+            <h2 className="section-title mb-6">Oxford Executive Black</h2>
             <div className="gold-underline mb-8" />
 
             <div className="space-y-6 text-muted-foreground text-lg leading-relaxed">
               <p>
-                Atlas es un zapato formal elaborado en cuero 100% natural, con
-                acabado pulido y una silueta definida que transmite elegancia,
-                seguridad y presencia en cada paso.
+                El reflejo del éxito en cada paso. Diseñado para el hombre contemporáneo 
+                que busca distinción, este calzado está minuciosamente confeccionado 
+                en cuero 100% legítimo de primera calidad.
               </p>
 
               <p>
-                Su diseño estructurado y su ajuste con cordones ofrecen comodidad
-                y soporte durante toda la jornada, ideal para negocios, eventos
-                formales y ocasiones especiales.
+                Su silueta estilizada y costuras de alta precisión complementan a la 
+                perfección cualquier atuendo formal, mientras su interior transpirable 
+                y suela duradera aseguran confort absoluto durante toda la jornada.
               </p>
             </div>
 
             <div className="mt-10">
               <p className="text-4xl font-display text-foreground mb-6">
-                $195.000
+                $159.000
               </p>
 
               <a
-                href="https://shop.giorgioclasic.com/products/atlas"
+                href="https://shop.giorgioclasic.com/products/oxford"
                 className="btn-luxury"
               >
                 Ver producto
