@@ -67,7 +67,7 @@ export const products = {
     slug: "terra",
     name: "Terra",
     category: "Sneakers",
-    price: "$110.000",
+    price: "$160.000",
     image: terraImg,
     buyLink: "https://shop.giorgioclasic.com/products/terra",
     description: [
