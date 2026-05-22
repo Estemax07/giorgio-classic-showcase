@@ -1,6 +1,7 @@
 import atlasImg from "@/assets/Atlas.jpeg";
 import aureoImg from "@/assets/Aureo.jpeg";
 import auroraImg from "@/assets/Aurora.jpeg";
+import oxfordImg from "@/assets/oxford.jpeg"; // <-- Nueva imagen importada
 import stilletosImg from "@/assets/Stilletos1.png";
 import terraImg from "@/assets/Terra.jpeg";
 import valienteImg from "@/assets/Valiente.jpeg";
@@ -102,6 +103,20 @@ export const products = {
       "Delicadeza y estilo que iluminan cada paso. Verona es un tacón femenino confeccionado en cuero 100% natural con acabado suave y tono neutro sofisticado que combina con todo.",
       "Su punta estilizada aporta un toque refinado, mientras la pulsera al tobillo brinda ajuste seguro y una silueta elegante.",
       "El tacón ancho ofrece estabilidad y comodidad durante todo el día, ideal para eventos, oficina o celebraciones especiales."
+    ]
+  },
+
+  oxford: {
+    slug: "oxford",
+    name: "Oxford Executive Black",
+    category: "Formal",
+    price: "$159.000",
+    image: oxfordImg,
+    buyLink: "https://shop.giorgioclasic.com/products/oxford",
+    description: [
+      "El reflejo del éxito en cada paso. Diseñado para el hombre contemporáneo que busca distinción, el Oxford Executive Black está minuciosamente confeccionado en cuero 100% legítimo de primera calidad.",
+      "Su diseño destaca por un impecable acabado, costuras de alta precisión y una silueta estilizada que complementa a la perfección cualquier traje formal o atuendo de negocios exigente.",
+      "Equipado con un forro interior suave y transpirable junto a una suela de alta durabilidad que asegura un agarre firme, soporte óptimo y confort superior durante todo el día."
     ]
   }
 } as const;
