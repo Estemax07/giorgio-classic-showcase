@@ -11,7 +11,7 @@ export const products = {
     slug: "atlas",
     name: "Atlas",
     category: "Formal",
-    price: "$150.000",
+    price: "$195.000",
     image: atlasImg,
     buyLink: "https://shop.giorgioclasic.com/products/atlas",
     description: [
@@ -25,7 +25,7 @@ export const products = {
     slug: "aureo",
     name: "Aureo",
     category: "Formal",
-    price: "$160.000",
+    price: "$195.000",
     image: aureoImg,
     buyLink: "https://shop.giorgioclasic.com/products/aureo",
     description: [
