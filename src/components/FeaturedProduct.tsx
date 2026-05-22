@@ -51,7 +51,7 @@ const FeaturedProduct = () => {
 
             <div className="mt-10">
               <p className="text-4xl font-display text-foreground mb-6">
-                $150.000
+                $195.000
               </p>
 
               <a
