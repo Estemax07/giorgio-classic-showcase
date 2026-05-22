@@ -1,38 +1,39 @@
+import sienaImg from "@/assets/siena.jpeg"; 
 import atlasImg from "@/assets/Atlas.jpeg";
 import aureoImg from "@/assets/Aureo.jpeg";
 import auroraImg from "@/assets/Aurora.jpeg";
-import oxfordImg from "@/assets/oxford.jpeg"; // <-- Nueva imagen importada
+import oxfordImg from "@/assets/oxford.jpeg";
 import stilletosImg from "@/assets/Stilletos1.png";
 import terraImg from "@/assets/Terra.jpeg";
 import valienteImg from "@/assets/Valiente.jpeg";
 import veronaImg from "@/assets/Verona.jpeg";
 
 export const products = {
-  atlas: {
-    slug: "atlas",
-    name: "Atlas",
-    category: "Formal",
-    price: "$195.000",
-    image: atlasImg,
-    buyLink: "https://shop.giorgioclasic.com/products/atlas",
+  siena: {
+    slug: "siena",
+    name: "Sneaker Hybrid Siena",
+    category: "Sneakers",
+    price: "$154.000",
+    image: sienaImg,
+    buyLink: "https://shop.giorgioclasic.com/products/siena",
     description: [
-      "Fuerza y distinción en cada detalle. Atlas es un zapato formal elaborado en cuero 100% natural, combinando acabado pulido y textura granulada para un contraste elegante y moderno.",
-      "Su diseño de líneas definidas y punta estructurada proyecta presencia, mientras el ajuste con cordones brinda soporte y comodidad durante toda la jornada.",
-      "Perfecto para negocios, eventos formales y ocasiones donde el estilo y la seguridad marcan la diferencia."
+      "El equilibrio perfecto entre confort urbano y sofisticación. Diseñado para romper la rutina sin perder el estilo, el Siena fusiona la estructura clásica de un zapato blucher con la versatilidad de un sneaker de vanguardia.",
+      "Confeccionado enteramente en cuero 100% natural seleccionado, este modelo destaca por su silueta fluida en un tono canela profundo, cordones contrastantes en color crema y un sutil detalle deportivo azul marino.",
+      "Su suela aerodinámica en tono hueso ofrece una amortiguación excepcional y un agarre firme, convirtiéndolo en el aliado ideal tanto para un viernes de oficina como para tus momentos de desconexión."
     ]
   },
 
-  aureo: {
-    slug: "aureo",
-    name: "Aureo",
+  oxford: {
+    slug: "oxford",
+    name: "Oxford Executive Black",
     category: "Formal",
-    price: "$195.000",
-    image: aureoImg,
-    buyLink: "https://shop.giorgioclasic.com/products/aureo",
+    price: "$159.000",
+    image: oxfordImg,
+    buyLink: "https://shop.giorgioclasic.com/products/oxford",
     description: [
-      "Distinción clásica con carácter contemporáneo. Aureo está elaborado en cuero 100% natural con acabado pulido y detalles texturizados que realzan su diseño elegante.",
-      "Su silueta estilizada y líneas refinadas proyectan presencia, mientras el ajuste de cordones garantiza comodidad y firmeza en cada paso.",
-      "Ideal para oficina, reuniones y ocasiones formales donde el estilo marca la diferencia."
+      "El reflejo del éxito en cada paso. Diseñado para el hombre contemporáneo que busca distinción, el Oxford Executive Black está minuciosamente confeccionado en cuero 100% legítimo de primera calidad.",
+      "Su diseño destaca por un impecable acabado, costuras de alta precisión y una silueta estilizada que complementa a la perfección cualquier traje formal o atuendo de negocios exigente.",
+      "Equipado con un forro interior suave y transpirable junto a una suela de alta durabilidad que asegura un agarre firme, soporte óptimo y confort superior durante todo el día."
     ]
   },
 
@@ -106,17 +107,31 @@ export const products = {
     ]
   },
 
-  oxford: {
-    slug: "oxford",
-    name: "Oxford Executive Black",
+  atlas: {
+    slug: "atlas",
+    name: "Atlas",
     category: "Formal",
-    price: "$159.000",
-    image: oxfordImg,
-    buyLink: "https://shop.giorgioclasic.com/products/oxford",
+    price: "$195.000",
+    image: atlasImg,
+    buyLink: "https://shop.giorgioclasic.com/products/atlas",
     description: [
-      "El reflejo del éxito en cada paso. Diseñado para el hombre contemporáneo que busca distinción, el Oxford Executive Black está minuciosamente confeccionado en cuero 100% legítimo de primera calidad.",
-      "Su diseño destaca por un impecable acabado, costuras de alta precisión y una silueta estilizada que complementa a la perfección cualquier traje formal o atuendo de negocios exigente.",
-      "Equipado con un forro interior suave y transpirable junto a una suela de alta durabilidad que asegura un agarre firme, soporte óptimo y confort superior durante todo el día."
+      "Fuerza y distinción en cada detalle. Atlas es un zapato formal elaborado en cuero 100% natural, combinando acabado pulido y textura granulada para un contraste elegante y moderno.",
+      "Su diseño de líneas definidas y punta estructurada proyecta presencia, mientras el ajuste con cordones brinda soporte y comodidad durante toda la jornada.",
+      "Perfecto para negocios, eventos formales y ocasiones donde el estilo y la seguridad marcan la diferencia."
+    ]
+  },
+
+  aureo: {
+    slug: "aureo",
+    name: "Aureo",
+    category: "Formal",
+    price: "$195.000",
+    image: aureoImg,
+    buyLink: "https://shop.giorgioclasic.com/products/aureo",
+    description: [
+      "Distinción clásica con carácter contemporáneo. Aureo está elaborado en cuero 100% natural con acabado pulido y detalles texturizados que realzan su diseño elegante.",
+      "Su silueta estilizada y líneas refinadas proyectan presencia, mientras el ajuste de cordones garantiza comodidad y firmeza en cada paso.",
+      "Ideal para oficina, reuniones y ocasiones formales donde el estilo marca la diferencia."
     ]
   }
 } as const;
