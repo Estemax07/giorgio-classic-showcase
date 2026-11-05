@@ -233,7 +233,7 @@ input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;bac
 
 /* Footer */
 footer{background:var(--ink);color:var(--white);border-top:3px solid var(--red)}
-footer .wrap{padding-block:64px calc(28px + env(safe-area-inset-bottom,0px));display:grid;gap:44px}
+footer .wrap{padding-block:64px calc(92px + env(safe-area-inset-bottom,0px));display:grid;gap:44px}
 .f-news{display:flex;flex-direction:column;align-items:center;text-align:center;gap:16px}
 .f-news h3{font-size:clamp(28px,4.6vw,44px)}
 .f-news form{display:flex;width:100%;max-width:480px;border-bottom:1px solid #555}
@@ -246,7 +246,8 @@ footer .wrap{padding-block:64px calc(28px + env(safe-area-inset-bottom,0px));dis
 .f-cols ul{list-style:none;margin:0;padding:0;display:grid;gap:9px;font-size:14px}
 .f-cols a:hover,.f-cols button:hover{color:var(--red)}
 .f-cols button{background:none;border:0;padding:0;cursor:pointer;text-align:left;font:300 14px var(--sans)}
-.f-mark{font-family:var(--display);text-align:center;font-size:clamp(56px,17vw,230px);letter-spacing:.3em;padding-left:.3em;line-height:.9;white-space:nowrap;overflow:hidden}
+.f-cont{container-type:inline-size}
+.f-mark{font-family:var(--display);text-align:center;font-size:min(11.8vw,170px);font-size:min(12.6cqw,170px);letter-spacing:.3em;padding-left:.3em;line-height:1;padding-block:.06em;white-space:nowrap}
 .f-legal{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:11.5px;color:#8A8A88;letter-spacing:.06em}
 
 /* Paneles laterales (menú, producto, bolsa) */
@@ -578,7 +579,7 @@ footer .wrap{padding-block:64px calc(28px + env(safe-area-inset-bottom,0px));dis
       <div><h4>La casa</h4><ul><li><a href="#top">El atelier</a></li><li><a href="https://shop.giorgioclasic.com/policies/privacy-policy" target="_blank" rel="noopener">Privacidad</a></li></ul></div>
       <div><h4>Pagos</h4><ul><li>Tarjeta crédito y débito</li><li>PSE</li><li>Efecty</li></ul></div>
     </div>
-    <div class="f-mark" aria-hidden="true">GIORGIO</div>
+    <div class="f-cont"><div class="f-mark" aria-hidden="true">GIORGIO</div></div>
     <div class="f-legal"><span>© 2026 Giorgio Manufacturas</span><span>Precios en pesos colombianos</span></div>
   </div>
 </footer>
