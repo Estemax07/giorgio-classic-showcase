@@ -163,6 +163,8 @@ section{padding-block:72px}
 @media(min-width:900px){.lines{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}}
 
 /* Colección */
+.mto{font-size:14px;line-height:1.6;padding:14px 16px;border-left:2px solid var(--red);background:rgb(127 127 127 / .08)}
+.mto b{font-weight:500}
 .tabs{display:flex;justify-content:center;gap:4px;flex-wrap:wrap;margin-bottom:36px;position:relative}
 .tabs button{background:none;border:0;padding:12px 14px;cursor:pointer;font:400 11px var(--sans);letter-spacing:.24em;text-transform:uppercase;color:var(--mute);transition:color .3s}
 .tabs button[aria-pressed="true"]{color:var(--ink)}
@@ -556,16 +558,16 @@ h1,h2,h3,.mf-text,.hero-name,.dial .num,.m-links button,.b-item h4,.st-item .rn{
       <div class="head rv"><span class="cap red">Las líneas</span><h2>Elige <i>tu paso</i></h2><span class="rule"></span></div>
       <div class="lines rv">
         <button class="line-card" data-go="hombre"><div class="lc-t"><span class="cap">3 modelos</span></div><div class="lc-img"><img src="/img/oxford.webp" alt=""></div><div class="lc-b"><h3>Hombre</h3><span class="arrow"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div></button>
-        <button class="line-card" data-go="mujer"><div class="lc-t"><span class="cap">3 modelos</span></div><div class="lc-img"><img src="/img/verona.webp" alt=""></div><div class="lc-b"><h3>Mujer</h3><span class="arrow"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div></button>
-        <button class="line-card" data-go="especial"><div class="lc-t"><span class="cap">Próximamente</span></div><div class="lc-img"><img src="/img/brogue.webp" alt=""></div><div class="lc-b"><h3>Edición especial</h3><span class="arrow"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div></button>
-        <button class="line-card" data-go="casual"><div class="lc-t"><span class="cap">1 modelo</span></div><div class="lc-img"><img src="/img/siena.webp" alt=""></div><div class="lc-b"><h3>Casual</h3><span class="arrow"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div></button>
+        <button class="line-card" data-go="mujer"><div class="lc-t"><span class="cap">3 modelos</span></div><div class="lc-img"><img src="/img/valiente.webp" alt=""></div><div class="lc-b"><h3>Mujer</h3><span class="arrow"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div></button>
+        <button class="line-card" data-go="especial"><div class="lc-t"><span class="cap">Bajo pedido · 4 modelos</span></div><div class="lc-img"><img src="/img/aureo.webp" alt=""></div><div class="lc-b"><h3>Edición especial</h3><span class="arrow"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div></button>
+        <button class="line-card" data-go="casual"><div class="lc-t"><span class="cap">2 modelos</span></div><div class="lc-img"><img src="/img/siena.webp" alt=""></div><div class="lc-b"><h3>Casual</h3><span class="arrow"><svg viewBox="0 0 16 16"><path d="M3 8h10M9 4l4 4-4 4"/></svg></span></div></button>
       </div>
     </div>
   </section>
 
   <section id="coleccion" style="padding-top:0">
     <div class="wrap">
-      <div class="head rv"><span class="cap red">La colección</span><h2>Ocho modelos, <i>un solo oficio</i></h2><span class="rule"></span></div>
+      <div class="head rv"><span class="cap red">La colección</span><h2>Doce modelos, <i>un solo oficio</i></h2><span class="rule"></span></div>
       <div class="tabs" id="tabs" role="group" aria-label="Filtrar colección">
         <button data-f="todos" aria-pressed="true">Todos</button><button data-f="hombre" aria-pressed="false">Hombre</button><button data-f="mujer" aria-pressed="false">Mujer</button><button data-f="casual" aria-pressed="false">Casual</button><button data-f="especial" aria-pressed="false">Edición especial</button>
         <span class="bar" id="tab-bar"></span>
@@ -665,7 +667,7 @@ h1,h2,h3,.mf-text,.hero-name,.dial .num,.m-links button,.b-item h4,.st-item .rn{
   <div class="panel" role="dialog" aria-label="Menú">
     <div class="p-top"><span class="logo" style="justify-self:start;padding-left:0;font-size:18px">GIORGIO</span><button class="ib" data-x aria-label="Cerrar"><svg viewBox="0 0 24 24"><path d="M5 5l14 14M19 5 5 19"/></svg></button></div>
     <div class="p-scroll"><div class="m-links">
-      <button data-go="hombre">Hombre <small>3</small></button><button data-go="mujer">Mujer <small>3</small></button><button data-go="casual">Casual <small>1</small></button><button data-go="especial">Edición especial <small>PRONTO</small></button><button data-fit>Guía de tallas</button>
+      <button data-go="hombre">Hombre <small>3</small></button><button data-go="mujer">Mujer <small>3</small></button><button data-go="casual">Casual <small>2</small></button><button data-go="especial">Edición especial <small>BAJO PEDIDO</small></button><button data-fit>Guía de tallas</button>
     </div></div>
   </div>
 </div>
@@ -688,6 +690,7 @@ h1,h2,h3,.mf-text,.hero-name,.dial .num,.m-links button,.b-item h4,.st-item .rn{
       <div class="pd">
         <div style="display:flex;flex-direction:column;gap:10px"><h2 id="pd-name"></h2><span class="pr" id="pd-price"></span></div>
         <p class="ds" id="pd-desc"></p>
+        <p class="mto" id="pd-mto" hidden><b>Premium · hecho bajo pedido.</b> Este par no está en producción continua: lo fabricamos especialmente para ti cuando haces tu pedido, por eso tarda más en llegar. Te confirmamos el tiempo de entrega por WhatsApp.</p>
         <div style="display:flex;flex-direction:column;gap:12px">
           <div class="sz-head"><span class="cap" id="sz-label">Talla</span><button class="link" data-fit>Guía de tallas</button></div>
           <div class="szs" id="szs"></div>
@@ -736,19 +739,25 @@ h1,h2,h3,.mf-text,.hero-name,.dial .num,.m-links button,.b-item h4,.st-item .rn{
 <script>
 document.documentElement.classList.add("js");
 const SHOP="https://shop.giorgioclasic.com";
-const IMG={atlas:"/img/atlas.webp",aureo:"/img/aureo.webp",oxford:"/img/oxford.webp",valiente:"/img/valiente.webp",verona:"/img/verona.webp",aurora:"/img/aurora.webp",siena:"/img/siena.webp",brogue:"/img/brogue.webp"};
+const IMG={atlas:"/img/atlas.webp",aureo:"/img/aureo.webp",oxford:"/img/oxford.webp",valiente:"/img/valiente.webp",verona:"/img/verona.webp",aurora:"/img/aurora.webp",siena:"/img/siena.webp",brogue:"/img/brogue.webp",milano:"/img/milano.webp",torino:"/img/torino.webp",elena:"/img/elena.webp",marino:"/img/marino.webp"};
 const MEN=[38,39,40,41,42,43,44], WOMEN=[34,35,36,37,38,39,40];
 const P=[
- {id:"atlas",name:"Atlas",line:"hombre",kind:"Oxford con puntera",price:195000,variant:"43741050241121",sizes:MEN,desc:"Puntera y talón en cuero pulido sobre un empeine granulado. Un zapato formal con presencia, para traje o pantalón de paño.",mat:"Cuero 100% natural, con acabado pulido en puntera y talón y textura granulada en el empeine."},
- {id:"aureo",name:"Aureo",line:"hombre",kind:"Wingtip miel",price:195000,variant:"43741066854497",sizes:MEN,desc:"Wingtip en tono miel con puntera perforada y suela de cuero. Funciona igual con traje que con jean oscuro.",mat:"Cuero 100% natural con acabado pulido y perforado. Suela en cuero."},
+ {id:"atlas",name:"Atlas",line:"especial",kind:"Oxford con puntera",price:195000,variant:"43741050241121",sizes:MEN,desc:"Puntera y talón en cuero pulido sobre un empeine granulado. Un zapato formal con presencia, para traje o pantalón de paño.",mat:"Cuero 100% natural, con acabado pulido en puntera y talón y textura granulada en el empeine."},
+ {id:"aureo",name:"Aureo",line:"especial",kind:"Wingtip miel",price:195000,variant:"43741066854497",sizes:MEN,desc:"Wingtip en tono miel con puntera perforada y suela de cuero. Funciona igual con traje que con jean oscuro.",mat:"Cuero 100% natural con acabado pulido y perforado. Suela en cuero."},
  {id:"oxford",name:"Oxford",line:"hombre",kind:"Derby negro",price:159000,variant:"45039570518113",sizes:MEN,desc:"Negro, liso y de horma alargada. El par que resuelve una semana completa de oficina.",mat:"Cuero 100% natural de acabado liso."},
  {id:"valiente",name:"Valiente",line:"mujer",kind:"Tacón ancho azul noche",price:179000,variant:"43741030350945",sizes:WOMEN,desc:"Punta afilada y tacón ancho para caminar toda la jornada sin perder la línea.",mat:"Cuero 100% natural de acabado suave."},
- {id:"verona",name:"Verona",line:"mujer",kind:"Tacón con correa nude",price:189000,variant:"43741056139361",sizes:WOMEN,desc:"Tono neutro, correa al tobillo con hebilla y tacón ancho. Para eventos de día y de noche.",mat:"Cuero 100% natural de acabado suave. Correa ajustable con hebilla."},
+ {id:"verona",name:"Verona",line:"especial",kind:"Tacón con correa nude",price:189000,variant:"43741056139361",sizes:WOMEN,desc:"Tono neutro, correa al tobillo con hebilla y tacón ancho. Para eventos de día y de noche.",mat:"Cuero 100% natural de acabado suave. Correa ajustable con hebilla."},
  {id:"aurora",name:"Aurora",line:"mujer",kind:"Tacón bajo negro",price:169000,variant:"43741093822561",sizes:WOMEN,desc:"Tacón bajo y punta redonda en cuero negro. Cómodo para estar de pie todo el día.",mat:"Cuero 100% natural granulado."},
  {id:"siena",name:"Siena",line:"casual",kind:"Tenis en cuero coñac",price:154000,variant:"45039590867041",sizes:MEN,desc:"Corte de zapato formal sobre suela de tenis. Para verse arreglado y caminar cómodo.",mat:"Cuero 100% natural en tono coñac. Suela en dos tonos."},
- {id:"brogue",name:"Brogue",line:"especial",kind:"Full brogue bicolor",price:null,variant:null,sizes:MEN,desc:"Full brogue en dos texturas de cuero miel. Edición especial en preparación; suscríbete para saber cuándo sale.",mat:"Cuero pulido con perforación clásica y cuero texturizado en el empeine."}
+ {id:"milano",name:"Milano",line:"hombre",kind:"Wingtip negro",price:null,variant:null,sizes:MEN,desc:"Wingtip en cuero negro granulado con puntera perforada y horma cuadrada. Formal, con carácter, para traje o pantalón de paño.",mat:"Cuero 100% natural granulado con perforación clásica. Suela de caucho."},
+ {id:"torino",name:"Torino",line:"hombre",kind:"Derby negro punta cuadrada",price:null,variant:null,sizes:MEN,desc:"Derby de cordones en cuero negro granulado y punta cuadrada. Sobrio y resistente para la oficina de lunes a viernes.",mat:"Cuero 100% natural granulado. Suela de caucho."},
+ {id:"elena",name:"Elena",line:"mujer",kind:"Tacón medio punta fina",price:null,variant:null,sizes:WOMEN,desc:"Punta fina y tacón cuadrado medio en cuero negro. Elegante para la oficina y firme para toda la jornada.",mat:"Cuero 100% natural granulado."},
+ {id:"marino",name:"Marino",line:"casual",kind:"Tenis azul noche",price:null,variant:null,sizes:MEN,desc:"Tenis en cuero azul noche con paneles de malla y suela blanca liviana. Para moverse todo el día sin dejar de verse bien.",mat:"Cuero 100% natural combinado con malla transpirable. Suela blanca acolchada."},
+ {id:"brogue",name:"Brogue",line:"especial",kind:"Full brogue bicolor",price:null,variant:null,sizes:MEN,desc:"Full brogue en dos texturas de cuero miel. Edición especial en preparación; escríbenos para saber cuándo sale.",mat:"Cuero pulido con perforación clásica y cuero texturizado en el empeine."}
 ];
-const LINE={hombre:"Hombre",mujer:"Mujer",casual:"Casual",especial:"Edición especial"};
+const LINE={hombre:"Hombre",mujer:"Mujer",casual:"Casual",especial:"Edición especial · Bajo pedido"};
+/* Edición especial: premium, se fabrica a la medida de cada cliente después del pedido */
+const PEDIDO=p=>p.line==="especial";
 const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
 const fmt=n=>"$"+n.toLocaleString("es-CO");
 const reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -788,8 +797,9 @@ if(!reduce){
 
 /* Colección */
 const grid=$("#grid");
-grid.innerHTML=P.map(p=>`<article class="card" data-line="${p.line}">
-  <button class="ph" data-open="${p.id}" aria-label="Ver ${p.name}">${p.line==="especial"?'<span class="badge">Edición especial</span>':""}<img src="${IMG[p.id]}" alt="${p.name}, ${p.kind}" loading="lazy"><span class="quick">${p.price?"Vista rápida":"Ver modelo"}</span></button>
+const ORDER=["hombre","mujer","casual","especial"];
+grid.innerHTML=[...P].sort((a,b)=>ORDER.indexOf(a.line)-ORDER.indexOf(b.line)).map(p=>`<article class="card" data-line="${p.line}">
+  <button class="ph" data-open="${p.id}" aria-label="Ver ${p.name}">${PEDIDO(p)?'<span class="badge">Bajo pedido</span>':""}<img src="${IMG[p.id]}" alt="${p.name}, ${p.kind}" loading="lazy"><span class="quick">${p.price?"Vista rápida":"Ver modelo"}</span></button>
   <div class="info"><h3>${p.name}</h3><span class="kind">${p.kind}</span>${p.price?`<span class="price">${fmt(p.price)}</span>`:'<span class="soon">Próximamente</span>'}</div>
 </article>`).join("");
 const bar=$("#tab-bar");
@@ -829,13 +839,13 @@ function openP(id){
   cur=P.find(p=>p.id===id); size=null;
   $("#pd-line").textContent=LINE[cur.line]; $("#pd-name").textContent=cur.name;
   $("#pd-price").textContent=cur.price?fmt(cur.price):"Próximamente";
-  $("#pd-desc").textContent=cur.desc; $("#pd-mat").textContent=cur.mat;
+  $("#pd-desc").textContent=cur.desc; $("#pd-mto").hidden=!PEDIDO(cur); $("#pd-mat").textContent=cur.mat;
   const im=$("#pv-img"); im.src=IMG[id]; im.alt=cur.name+", "+cur.kind;
   pv.classList.remove("zoom"); $("#pv-hint").textContent="Toca para ampliar";
   $("#szs").innerHTML=cur.sizes.map(s=>`<button aria-pressed="false" data-s="${s}">${s}</button>`).join("");
   $("#sz-label").textContent="Talla";
   const add=$("#add");
-  if(cur.price){add.textContent="Añadir a la bolsa";add.removeAttribute("aria-disabled");}else{add.textContent="Disponible pronto";add.setAttribute("aria-disabled","true");}
+  if(cur.price){add.textContent=PEDIDO(cur)?"Encargar este par":"Añadir a la bolsa";add.removeAttribute("aria-disabled");}else{add.textContent="Disponible pronto";add.setAttribute("aria-disabled","true");}
   openSheet("pdp"); $("#pdp .p-scroll").scrollTop=0;
 }
 $("#szs").addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;size=+b.dataset.s;$$("#szs button").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));$("#sz-label").textContent="Talla "+size;});
