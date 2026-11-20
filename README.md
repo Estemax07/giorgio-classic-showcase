@@ -12,6 +12,8 @@ La tienda, el carrito y los pagos viven en Shopify: **shop.giorgioclasic.com**.
 ## Cambiar precios o productos
 En `index.html`, busca `const P=[`. Cada producto tiene su nombre, precio, tallas y el `variant`
 (el ID de la variante en Shopify) que usa el botón de compra.
+Los modelos con una variante por talla (Milano, Torino, Elena, Marino) guardan `variant` como `{talla: id}`.
+La línea `especial` es la Edición especial premium, hecha bajo pedido.
 
 ## Probar en tu computador
 ```

@@ -690,7 +690,7 @@ h1,h2,h3,.mf-text,.hero-name,.dial .num,.m-links button,.b-item h4,.st-item .rn{
       <div class="pd">
         <div style="display:flex;flex-direction:column;gap:10px"><h2 id="pd-name"></h2><span class="pr" id="pd-price"></span></div>
         <p class="ds" id="pd-desc"></p>
-        <p class="mto" id="pd-mto" hidden><b>Premium · hecho bajo pedido.</b> Este par no está en producción continua: lo fabricamos especialmente para ti cuando haces tu pedido, por eso tarda más en llegar. Te confirmamos el tiempo de entrega por WhatsApp.</p>
+        <p class="mto" id="pd-mto" hidden><b>Premium · hecho bajo pedido.</b> Este par no está en producción continua: lo fabricamos especialmente para ti cuando haces tu pedido. Tiempo de producción: unas 2 semanas; te confirmamos la fecha de entrega por WhatsApp.</p>
         <div style="display:flex;flex-direction:column;gap:12px">
           <div class="sz-head"><span class="cap" id="sz-label">Talla</span><button class="link" data-fit>Guía de tallas</button></div>
           <div class="szs" id="szs"></div>
@@ -749,10 +749,10 @@ const P=[
  {id:"verona",name:"Verona",line:"especial",kind:"Tacón con correa nude",price:189000,variant:"43741056139361",sizes:WOMEN,desc:"Tono neutro, correa al tobillo con hebilla y tacón ancho. Para eventos de día y de noche.",mat:"Cuero 100% natural de acabado suave. Correa ajustable con hebilla."},
  {id:"aurora",name:"Aurora",line:"mujer",kind:"Tacón bajo negro",price:169000,variant:"43741093822561",sizes:WOMEN,desc:"Tacón bajo y punta redonda en cuero negro. Cómodo para estar de pie todo el día.",mat:"Cuero 100% natural granulado."},
  {id:"siena",name:"Siena",line:"casual",kind:"Tenis en cuero coñac",price:154000,variant:"45039590867041",sizes:MEN,desc:"Corte de zapato formal sobre suela de tenis. Para verse arreglado y caminar cómodo.",mat:"Cuero 100% natural en tono coñac. Suela en dos tonos."},
- {id:"milano",name:"Milano",line:"hombre",kind:"Wingtip negro",price:null,variant:null,sizes:MEN,desc:"Wingtip en cuero negro granulado con puntera perforada y horma cuadrada. Formal, con carácter, para traje o pantalón de paño.",mat:"Cuero 100% natural granulado con perforación clásica. Suela de caucho."},
- {id:"torino",name:"Torino",line:"hombre",kind:"Derby negro punta cuadrada",price:null,variant:null,sizes:MEN,desc:"Derby de cordones en cuero negro granulado y punta cuadrada. Sobrio y resistente para la oficina de lunes a viernes.",mat:"Cuero 100% natural granulado. Suela de caucho."},
- {id:"elena",name:"Elena",line:"mujer",kind:"Tacón medio punta fina",price:null,variant:null,sizes:WOMEN,desc:"Punta fina y tacón cuadrado medio en cuero negro. Elegante para la oficina y firme para toda la jornada.",mat:"Cuero 100% natural granulado."},
- {id:"marino",name:"Marino",line:"casual",kind:"Tenis azul noche",price:null,variant:null,sizes:MEN,desc:"Tenis en cuero azul noche con paneles de malla y suela blanca liviana. Para moverse todo el día sin dejar de verse bien.",mat:"Cuero 100% natural combinado con malla transpirable. Suela blanca acolchada."},
+ {id:"milano",name:"Milano",line:"hombre",kind:"Wingtip negro",price:164900,variant:{38:"50936173789281",39:"50936173822049",40:"50936173854817",41:"50936173887585",42:"50936173920353",43:"50936173953121",44:"50936173985889"},sizes:MEN,desc:"Wingtip en cuero negro granulado con puntera perforada y horma cuadrada. Formal, con carácter, para traje o pantalón de paño.",mat:"Cuero 100% natural granulado con perforación clásica. Suela de caucho."},
+ {id:"torino",name:"Torino",line:"hombre",kind:"Derby negro punta cuadrada",price:159000,variant:{38:"50936174018657",39:"50936174051425",40:"50936174084193",41:"50936174116961",42:"50936174149729",43:"50936174182497",44:"50936174215265"},sizes:MEN,desc:"Derby de cordones en cuero negro granulado y punta cuadrada. Sobrio y resistente para la oficina de lunes a viernes.",mat:"Cuero 100% natural granulado. Suela de caucho."},
+ {id:"elena",name:"Elena",line:"mujer",kind:"Tacón medio punta fina",price:129000,variant:{34:"50936174542945",35:"50936174575713",36:"50936174608481",37:"50936174641249",38:"50936174674017",39:"50936174706785",40:"50936174739553"},sizes:WOMEN,desc:"Punta fina y tacón cuadrado medio en cuero negro. Elegante para la oficina y firme para toda la jornada.",mat:"Cuero 100% natural granulado."},
+ {id:"marino",name:"Marino",line:"casual",kind:"Tenis azul noche",price:134900,variant:{38:"50936175198305",39:"50936175231073",40:"50936175263841",41:"50936175296609",42:"50936175329377",43:"50936175362145",44:"50936175394913"},sizes:MEN,desc:"Tenis en cuero azul noche con paneles de malla y suela blanca liviana. Para moverse todo el día sin dejar de verse bien.",mat:"Cuero 100% natural combinado con malla transpirable. Suela blanca acolchada."},
  {id:"brogue",name:"Brogue",line:"especial",kind:"Full brogue bicolor",price:null,variant:null,sizes:MEN,desc:"Full brogue en dos texturas de cuero miel. Edición especial en preparación; escríbenos para saber cuándo sale.",mat:"Cuero pulido con perforación clásica y cuero texturizado en el empeine."}
 ];
 const LINE={hombre:"Hombre",mujer:"Mujer",casual:"Casual",especial:"Edición especial · Bajo pedido"};
@@ -879,7 +879,7 @@ function renderBag(){
   list.innerHTML=bag.map((b,i)=>{const p=P.find(x=>x.id===b.id);return `<div class="b-item"><div class="th"><img src="${IMG[p.id]}" alt=""></div><div><h4>${p.name}</h4><div class="meta">${p.kind} · Talla ${b.s}</div><div class="meta">${fmt(p.price*b.q)}</div><div class="ctl"><div class="qty"><button data-q="${i}" data-d="-1" aria-label="Quitar uno">−</button><span>${b.q}</span><button data-q="${i}" data-d="1" aria-label="Añadir uno">+</button></div><button class="rm" data-rm="${i}">Quitar</button></div></div></div>`}).join("");
   const total=bag.reduce((a,b)=>a+P.find(x=>x.id===b.id).price*b.q,0);
   $("#bag-total").textContent=fmt(total);
-  const agg={}; bag.forEach(b=>{const v=P.find(x=>x.id===b.id).variant;agg[v]=(agg[v]||0)+b.q;});
+  const agg={}; bag.forEach(b=>{const pv0=P.find(x=>x.id===b.id).variant, v=typeof pv0==="object"?pv0[b.s]:pv0;agg[v]=(agg[v]||0)+b.q;});
   const note=bag.map(b=>`${P.find(x=>x.id===b.id).name} talla ${b.s} x${b.q}`).join("; ");
   $("#checkout").href=`${SHOP}/cart/${Object.entries(agg).map(([v,q])=>v+":"+q).join(",")}?note=${encodeURIComponent(note)}`;
 }
