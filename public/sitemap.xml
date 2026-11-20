@@ -1,30 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-<url>
-<loc>https://giorgioclasic.com</loc>
-<priority>1.0</priority>
-</url>
-
-<url>
-<loc>https://shop.giorgioclasic.com/products/atlas</loc>
-</url>
-
-<url>
-<loc>https://shop.giorgioclasic.com/products/aureo</loc>
-</url>
-
-<url>
-<loc>https://shop.giorgioclasic.com/products/aurora</loc>
-</url>
-
-<url>
-<loc>https://shop.giorgioclasic.com/products/valiente</loc>
-</url>
-
-<url>
-<loc>https://shop.giorgioclasic.com/products/verona</loc>
-</url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://www.giorgioclasic.com/</loc>
+    <lastmod>2026-11-19</lastmod>
+    <priority>1.0</priority>
+    <image:image><image:loc>https://www.giorgioclasic.com/img/milano.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.giorgioclasic.com/img/torino.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.giorgioclasic.com/img/oxford.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.giorgioclasic.com/img/atlas.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.giorgioclasic.com/img/aureo.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.giorgioclasic.com/img/elena.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.giorgioclasic.com/img/valiente.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.giorgioclasic.com/img/aurora.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.giorgioclasic.com/img/verona.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.giorgioclasic.com/img/siena.webp</image:loc></image:image>
+    <image:image><image:loc>https://www.giorgioclasic.com/img/marino.webp</image:loc></image:image>
+  </url>
 </urlset>

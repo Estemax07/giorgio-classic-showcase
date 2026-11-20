@@ -13,4 +13,5 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://giorgioclasic.com/sitemap.xml
+Sitemap: https://www.giorgioclasic.com/sitemap.xml
+Sitemap: https://shop.giorgioclasic.com/sitemap.xml
